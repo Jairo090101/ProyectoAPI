@@ -2,7 +2,7 @@
 
 # 📋 API de Gestión de Tareas - Laravel
 
-Este es un proyecto de API RESTful desarrollado con Laravel 10 que permite gestionar tareas (crear, listar, editar, eliminar) y cuenta con autenticación de usuarios mediante Laravel Sanctum.
+Este es un proyecto de API RESTful desarrollado con Laravel que permite gestionar tareas (crear, listar, editar, eliminar) y cuenta con autenticación de usuarios mediante Laravel Sanctum.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -15,27 +15,32 @@ Este es un proyecto de API RESTful desarrollado con Laravel 10 que permite gesti
 
 ---
 
+
 ## ⚙️ Instalación del Proyecto
 
 1. **Clonar el repositorio:**
 
    ```bash
    git clone https://github.com/Jairo090101/ProyectoAPI
-
-2. Instalar dependencias de PHP (Laravel):
+   
+2. Crea una base de datos con nombre "crud_prueba"
+   
+3. Instalar dependencias de PHP (Laravel):
     composer install
 
-3. Copiar archivo .env de ejemplo y configurarlo:
+4. Copiar archivo .env de ejemplo y configurarlo:
     Luego edita .env con tus credenciales de base de datos y otras configuraciones.
+    copy .env.example .env
 
-4. Generar la clave de aplicación:
+5. Generar la clave de aplicación:
     php artisan key:generate
 
-5. Ejecutar las migraciones:
+6. Ejecutar las migraciones:
    php artisan migrate
 
-6. Ingresar datos de prueba
+7. Ingresar datos de prueba
    php artisan db:seed
+
 
 
 ## 📡 Endpoints de la API
@@ -84,9 +89,9 @@ Realiza una petición POST a:
 
   - Ve a la pestaña Headers de Postman y agrega:
 
-    - Key	Value
-    - Accept	application/json
-    - Authorization	Bearer 3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2
+    - Key	        Value
+    - Accept	        application/json
+    - Authorization	Bearer     3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2
 
             Reemplaza el token por el que obtuviste en el login.
 
@@ -108,4 +113,7 @@ Realiza una petición POST a:
 📌 Notas
 - No se sube el archivo .env, pero se incluye .env.example para facilitar la configuración.
 - El directorio vendor/ no se sube a GitHub, se genera con composer install.
+- Comparto Link para video de prueba: https://drive.google.com/drive/folders/1VGUOhQKezcxYyoXoCzJARxlAP0j-lZZp?usp=sharing
+
+
    
