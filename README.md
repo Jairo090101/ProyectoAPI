@@ -49,6 +49,8 @@ Este es un proyecto de API RESTful desarrollado con Laravel 10 que permite gesti
 - PUT	    /api/tareas/{id}	Editar una tarea existente	    Sí
 - DELETE	/api/tareas/{id}	Eliminar una tarea	            Sí
 
+  
+
 🧪 Pruebas
 Realizar pruebas con Postman
 
@@ -62,8 +64,8 @@ Realiza una petición POST a:
 - {
   "name": "Jairo",
   "email": "jairo@example.com",
-  "password": "password",
-  "password_confirmation": "password"
+  "password": "ingrese_x_contraseña",
+  "password_confirmation": "ingrese_misma_contraseña"
    }
 
 🔑 2. Iniciar Sesión (Login)
@@ -71,9 +73,24 @@ Realiza una petición POST a:
     Cuerpo:
     {
       "email": "jairo@example.com",
-      "password": "password"
+      "password": "ingrese_x_contraseña"
     }
   ✅ Si es exitoso, recibirás una respuesta con un token como este: "token": "3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2"
+
+  📥 3. Usar el token en Postman
+      - Para acceder a cualquier ruta protegida (GET, POST, PUT, DELETE), debes enviar este token en el encabezado de la solicitud.
+
+  - Ve a la pestaña Headers de Postman y agrega:
+
+    - Key	Value
+    - Accept	application/json
+    - Authorization	Bearer 3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2
+
+            Reemplaza el token por el que obtuviste en el login.
+
+🚪 Cerrar sesión
+    - POST /api/logout
+    
 
 📁 Estructura del Proyecto
 - app/Models/Tarea.php → Modelo de tarea
