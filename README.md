@@ -52,6 +52,29 @@ Este es un proyecto de API RESTful desarrollado con Laravel 10 que permite gesti
 🧪 Pruebas
 Realizar pruebas con Postman
 
+🔐 Autenticación con Laravel Sanctum (usando Postman)
+Para acceder a rutas protegidas (crear, editar, eliminar tareas), necesitas enviar un token de acceso generado al iniciar sesión. Aquí te explicamos cómo hacerlo paso a paso:
+
+📌 1. Registro de Usuario
+Realiza una petición POST a:
+- POST /api/register
+    Con un cuerpo JSON como:
+- {
+  "name": "Jairo",
+  "email": "jairo@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+   }
+
+🔑 2. Iniciar Sesión (Login)
+- POST /api/login
+    Cuerpo:
+    {
+      "email": "jairo@example.com",
+      "password": "password"
+    }
+  ✅ Si es exitoso, recibirás una respuesta con un token como este: "token": "3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2"
+
 📁 Estructura del Proyecto
 - app/Models/Tarea.php → Modelo de tarea
 - app/Http/Controllers/TareaController.php → Controlador principal
