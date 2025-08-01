@@ -25,12 +25,8 @@ class AuthController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
-        //Token
-        $token = $user->createToken('api-token')->plainTextToken;
-
         return response()->json([
             'user' => $user,
-            'token' => $token
         ], 201);
     }
 
@@ -49,7 +45,6 @@ class AuthController extends Controller
                 'email' => ['Credenciales incorrectas.'],
             ]);
         }
-
         $token = $user->createToken('api-token')->plainTextToken;
 
         return response()->json([
