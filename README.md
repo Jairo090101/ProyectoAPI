@@ -39,15 +39,15 @@ Este es un proyecto de API RESTful desarrollado con Laravel 10 que permite gesti
 
 
 ## 📡 Endpoints de la API
-Método	Endpoint	        Descripción	Protegido         (token)
-POST	/api/register	    Registrar usuario	            No
-POST	/api/login	        Iniciar sesión	                No
-POST	/api/logout	        Cerrar sesión	                Sí
-GET	    /api/tareas	        Listar todas las tareas	        Sí
-GET	    /api/tareas/{id}	Ver una tarea específica	    Sí
-POST	/api/tareas	        Crear una nueva tarea	        Sí
-PUT	    /api/tareas/{id}	Editar una tarea existente	    Sí
-DELETE	/api/tareas/{id}	Eliminar una tarea	            Sí
+-  Método	Endpoint	        Descripción	Protegido         (token)
+- POST	/api/register	    Registrar usuario	            No
+- POST	/api/login	        Iniciar sesión	                No
+- POST	/api/logout	        Cerrar sesión	                Sí
+- GET	    /api/tareas	        Listar todas las tareas	        Sí
+- GET	    /api/tareas/{id}	Ver una tarea específica	    Sí
+- POST	/api/tareas	        Crear una nueva tarea	        Sí
+- PUT	    /api/tareas/{id}	Editar una tarea existente	    Sí
+- DELETE	/api/tareas/{id}	Eliminar una tarea	            Sí
 
 🧪 Pruebas
 Realizar pruebas con Postman
