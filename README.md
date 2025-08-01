@@ -39,7 +39,7 @@ Este es un proyecto de API RESTful desarrollado con Laravel que permite gestiona
    php artisan migrate
 
 7. Ingresar datos de prueba
-   php artisan db:seed
+   php artisan db:seed --class=TareaSeeder
 
 
 
