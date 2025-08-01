@@ -30,15 +30,16 @@ Este es un proyecto de API RESTful desarrollado con Laravel que permite gestiona
 
 4. Copiar archivo .env de ejemplo y configurarlo:
     Luego edita .env con tus credenciales de base de datos y otras configuraciones.
+   
     copy .env.example .env
 
-5. Generar la clave de aplicación:
+6. Generar la clave de aplicación:
     php artisan key:generate
 
-6. Ejecutar las migraciones:
+7. Ejecutar las migraciones:
    php artisan migrate
 
-7. Ingresar datos de prueba
+8. Ingresar datos de prueba
    php artisan db:seed --class=TareaSeeder
 
 
