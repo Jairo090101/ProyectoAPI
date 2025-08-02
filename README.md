@@ -82,7 +82,7 @@ Realiza una petición POST a:
       "email": "jairo@example.com",
       "password": "ingrese_x_contraseña"
     }
-  ✅ Si es exitoso, recibirás una respuesta con un token como este: "token": "3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2"
+  ✅ Si es exitoso, recibirás una respuesta con un token parecido a este: "token": "3|T12PfzM9LqI5nurxk33pmDV6yiINEzv1SyguXmAH540ee7f2"
 
 
 📥 3. Usar el token en Postman
